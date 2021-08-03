@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+}
+
+.time-select,
+.sound-picker {
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    cursor: pointer;
+}
+
+.time-select button,
+.sound-picker button {
+    color: white;
+    width: 30%;
+    height: 10%;
+    background: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.sound-picker button {
+    border: none;
+    height: 120px;
+    width: 120px;
+    padding: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sound-picker button img {
+    height: 100%;
+    cursor: pointer;
+}
+
+.time-select button:hover {
+    background: tomato;
+    color: white;
+    cursor: pointer;
+}
+
+.player-container {
+    position: relative;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    cursor: pointer;
+}
+
+.player-container svg {
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.player-container svg circle {
+    transition: all 0.2s ease-in-out;
+}
+
+.time-display {
+    position: absolute;
+    font-size: 50px;
+    bottom: 10%;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+video {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: -10;
+    cursor: pointer;
+}
+
+.play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 2px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.replay {
+    padding-bottom: 40px;
+    cursor: pointer;
+}
